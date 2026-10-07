@@ -5,6 +5,7 @@ from airflow import DAG
 from airflow.providers.standard.operators.python import PythonOperator
 from airflow.providers.standard.operators.trigger_dagrun import TriggerDagRunOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
+from airflow.models import Variable  # <-- NUEVA IMPORTACIÓN
 
 doc_md_usos_ingesta = """
 ### DAG 1: Ingesta Raw - Transacciones de Usos (`usos_raw`)
@@ -75,15 +76,19 @@ with DAG(
         conn.autocommit = True
         cursor = conn.cursor()
 
+        # <-- AQUÍ SOLICITAMOS LA URL DESDE LAS VARIABLES DE AIRFLOW
+        base_url = Variable.get("API_USOS_BASE_URL", default_var="https://api-placeholder.local/getbyidtransactionscard")
+
         while True:
-            url = f"https://mio-bff.trafpay.cl/card/getbyidtransactionscard?id={id_base}&pageNumber={page_number}&pageSize={page_size}&projectId=1"
+            # Construimos la URL dinámica usando la variable
+            url = f"{base_url}?id={id_base}&pageNumber={page_number}&pageSize={page_size}&projectId=1"
             
             try:
                 response = requests.get(url, timeout=60)
                 response.raise_for_status()
                 payload = response.json()
             except Exception as e:
-                print(f"Error al llamar la API en página {page_number} ({url}): {e}")
+                print(f"Error al llamar la API en página {page_number}: {e}") # Evitar imprimir la URL completa en los logs por seguridad
                 break
 
             response_content = payload.get('response') if isinstance(payload, dict) else None
