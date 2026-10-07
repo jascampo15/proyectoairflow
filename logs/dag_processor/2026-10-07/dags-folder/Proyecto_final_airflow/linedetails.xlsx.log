@@ -16,3 +16,6 @@
 {"timestamp":"2026-10-07T01:53:21.585796","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Proyecto_final_airflow/linedetails.xlsx","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2026-10-07T01:53:53.257675","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Proyecto_final_airflow/linedetails.xlsx","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2026-10-07T01:54:26.166424","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Proyecto_final_airflow/linedetails.xlsx","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2026-10-07T01:54:56.834223","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Proyecto_final_airflow/linedetails.xlsx","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2026-10-07T01:55:27.792033","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Proyecto_final_airflow/linedetails.xlsx","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2026-10-07T01:55:58.518855","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Proyecto_final_airflow/linedetails.xlsx","logger":"airflow.models.dagbag.DagBag"}
