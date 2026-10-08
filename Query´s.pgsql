@@ -10,16 +10,10 @@ UNION ALL
 SELECT 'lines_silver' AS tabla, count(*) AS total_registros FROM lines_silver
 ;
 
---DELETE from usos_silver;
---DELETE from lines_raw;
-
-SELECT * 
-FROM usos_raw a
-where a.id_txn >= '99990001'
-;
 
 
 
+--Query para consultar tranformación en la capa silver consolidados por fecha y hora
 SELECT 
     TO_CHAR(a.date_time, 'YYYY-MM-DD') AS fecha,
     TO_CHAR(a.date_time, 'HH24') AS hora,
@@ -43,6 +37,7 @@ a.terminal_id,
 a.amount
 ORDER BY MIN(a.date_time) DESC;
 
+--Query capa gold consolidados por hora
 SELECT 
     TO_CHAR(a.fecha, 'YYYY-MM-DD') AS fecha,
     a.integracion AS integracion,

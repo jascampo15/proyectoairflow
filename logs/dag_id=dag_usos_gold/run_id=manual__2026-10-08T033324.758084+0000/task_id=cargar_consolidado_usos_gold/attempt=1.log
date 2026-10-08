@@ -1,0 +1,6 @@
+{"timestamp":"2026-10-08T03:33:26.308990","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2026-10-08T03:33:26.310079","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_usos_gold.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2026-10-08T03:33:26.387198","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2026-10-08T03:33:26.432996","level":"info","event":"Connection Retrieved 'postgres_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2026-10-08T03:33:26.683004Z","level":"info","event":"✅ Se consolidaron agregados para 1 fechas.","chan":"stdout","logger":"task"}
+{"timestamp":"2026-10-08T03:33:26.691498","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

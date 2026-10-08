@@ -1,0 +1,6 @@
+{"timestamp":"2026-10-08T02:38:14.059721","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2026-10-08T02:38:14.060207","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_lineas_transformacion.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2026-10-08T02:38:14.466538","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2026-10-08T02:38:14.491442","level":"info","event":"Connection Retrieved 'postgres_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2026-10-08T02:38:14.608946Z","level":"info","event":"✅ Sincronización exitosa. Se insertaron 378 registros en 'lines_silver'.","chan":"stdout","logger":"task"}
+{"timestamp":"2026-10-08T02:38:14.609626","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
