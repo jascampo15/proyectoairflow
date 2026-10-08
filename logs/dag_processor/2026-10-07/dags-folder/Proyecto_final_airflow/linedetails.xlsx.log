@@ -159,3 +159,4 @@
 {"timestamp":"2026-10-07T03:07:18.999168","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Proyecto_final_airflow/linedetails.xlsx","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2026-10-07T03:07:50.065157","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Proyecto_final_airflow/linedetails.xlsx","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2026-10-07T03:08:20.745238","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Proyecto_final_airflow/linedetails.xlsx","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2026-10-07T03:08:51.108386","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Proyecto_final_airflow/linedetails.xlsx","logger":"airflow.models.dagbag.DagBag"}
